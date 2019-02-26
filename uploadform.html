@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Main</title>
+    </head>
+    <body>
+
+        <form action="files.php">
+            <p>Click My Files to view your files: </p>
+            <input type="submit" value="My Files">
+        </form>
+
+        <form enctype="multipart/form-data" action="uploader.php" method="POST">
+            <p>
+                <input type="hidden" name="MAX_FILE_SIZE" value="100000000" />
+                <label for="uploadfile_input">Or choose a new file to upload (max file size 10megabytes):</label> <input name="uploadedfile" type="file" id="uploadfile_input" />
+            </p>
+            <p>
+                <input type="submit" value="Upload File" />
+            </p>
+
+        </form>
+        <br>
+
+
+
+        <form action="logout.php">
+
+            <input type="submit" value="Log out">
+        </form>
+
+    </body>
+</html>
